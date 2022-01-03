@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body {
+    width: 100%;
+    max-width: 1440px;
+    background-color:#3a4764;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.num{
+    display: flex;
+    justify-content: flex-end;
+}
+.num p {
+    
+    margin: 2px;
+    
+}
+.control p {
+    float: right;
+}
+.screen{
+    width: 400px;
+    
+    
+}
+#screen {
+    width: 100%;
+    height: 80px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+    background-color: darkgrey;
+    font-size: 30px;
+    text-align: end;
+    
+}
+
+.cal-Body{
+    width: 396px;
+    background-color: #182034;
+    padding: 2px;
+}
+ button {
+    width: 70px;
+    padding: 2px;
+    border-radius: 4px;
+    box-shadow:  0 2px 0px 0px rgb(247, 212, 212);
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    margin: 8px;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+}
+.reset{
+    background-color: #637097;
+    color: white;
+    width: 160px;
+    font-size: 25px;
+    box-shadow: 0px  3px 0px 0px #404e72;
+}
+ 
+ #del {
+    background-color: #637097;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    box-shadow: 0px  3px 0px 0px #404e72;
+ }
+ .number {
+    font-size: 18px;
+    padding: 8px;
+ }
+ /*btnMix = plus minus slash multiply*/
+ #btnMix{
+    font-size: 18px;
+    padding: 8px;
+    box-shadow: 0px  3px 0px 0px #404e72;
+ }
+
+ #btnReset{
+    background-color: red;
+    font-size: 18px;
+    padding: 5px;
+    color: white;
+    width: 160px;
+ }
+
+ #btnEql{
+    background-color: blue;
+    font-size: 18px;
+    padding: 5px;
+    width: 160px;
+    color: white;
+ }
