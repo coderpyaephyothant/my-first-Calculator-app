@@ -3,6 +3,11 @@
     margin: 0;
    
 }
+:root {
+    --mainbgcolor:3a4764;
+    --mainnbg1color:greenyellow;
+    --mainbg2color:gold;
+}
 body {
     width: 100%;
     max-width: 1440px;
@@ -13,15 +18,71 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.title h4 {
+    margin: 0;
+    background-color: chartreuse;
+}
 .num{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.right {
     display: flex;
     justify-content: flex-end;
 }
 .num p {
+    cursor: pointer;
+    margin-right: 5px;
+}
+.control {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
     
-    margin: 2px;
+}
+.control .box {
+    width: 50px;
+    height: 15px;
+    background-color: grey;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    position: relative;
     
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: rgb(11, 247, 247);
+    position: absolute;
+    left: 0px;
+    margin-left: 2px;
+    transition: all 1s ease-in-out ;
+}
+
+.change {
+    transform: translateX(15px);
+    background-color: greenyellow;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 2px;
+    transition: all 1s ease-in-out ;
+    
+}
+.change1{
+    transform: translateX(30px);
+    background-color:gold;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 2px;
+    transition: all 1s ease-in-out ;
 }
 .control p {
     float: right;
@@ -111,3 +172,13 @@ body {
     width: 160px;
     color: white;
  }
+
+ .active1 {
+     background-color: darkcyan;
+ }
+ .active2 {
+    background-color: forestgreen;
+}
+.active3 {
+    background-color: gold;
+}
